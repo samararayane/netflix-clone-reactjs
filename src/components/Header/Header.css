@@ -23,6 +23,7 @@ header.black {
 }
 .header--user {
     height: 35px;
+    right: 60px;
 }
 .header--user img {
     height: 100%;
