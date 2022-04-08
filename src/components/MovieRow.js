@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './MovieRow.css';
-import { GrNext, GrPrevious } from 'react-icons/gr';
+import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md'
 
 export default({title, items}) => {
     const [scrollX, setScrollX] = useState(0);
@@ -26,10 +26,10 @@ export default({title, items}) => {
         <div className="movieRow">
             <h2>{title}</h2>
             <div className="movieRow--left" onClick={handleLeftArrow}>
-                <GrPrevious style={{fontSize: 50}} />
+                <MdNavigateBefore style={{fontSize: 50, color:"#FFF"}} />
             </div>
             <div className="movieRow--right" onClick={handleRightArrow}>
-                <GrNext style={{fontSize: 50}} />
+                <MdNavigateNext style={{fontSize: 50, color:"#FFF"}} />
             </div>
             <div className="movieRow--listarea">
                 <div className="movieRow--list" style={{
